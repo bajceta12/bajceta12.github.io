@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aleksandar B. - Personal Website</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <style>
+            table {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 8px;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>HTML Page</h1>
+            <p><mark><strong>Note:</strong><em>This page wont't be styled on purpose, in order to show raw HTML look</em>.</mark></p>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Homepage</a></li>
+                    <li><a href="./html.html"><abbr title="HyperText Markup Language">HTML</abbr></a></li>
+                    <li><a href="#"><abbr title="Cascading StyleSheets">CSS</abbr></a></li>
+                    <li><a href="#">Python</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2><abbr title="HyperText Markup Language">HTML</abbr> Section</h2>
+            <p>HTML stand for <strong>HyperText Markup Language</strong>. Every Webpage is written using HTML! ( including this one &#128013 )</p>
+            <p>
+                HTML is used for structuring a Webpage, while <abbr title="Cascading StlyeSheets">CSS</abbr> and JavaScript are used to provide style and functionality.
+                Each Webpage consists of HTML elements that themselves consist of opening tag, inner content and closing tag: <i>example: &lth1&gtTitle&lt/h1&gt.</i>
+                In this section, I will add html tags I learn, their usage and default styling. That way I can learn through practice, and at the end, have my HTML CheatSheet.
+            </p>
+            <h3>List of content</h3>
+            <ol>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#head">HEAD</a></li>
+                <li><a href="#body">BODY</a></li>
+                <li><a href="#header">HEADER</a></li>
+                <li><a href="#main">MAIN</a></li>
+                <li><a href="#footer">FOOTER</a></li>
+                <li><a href="#format">FORMATING HTML</a></li>
+                <li><a href="#quote">QUOTATION AND CITATION</a></li>
+                <li><a href="#code">COMPUTER CODE ELEMENTS</a></li>
+            </ol>
+            <table id="html">
+                <thead>
+                    <tr>
+                        <th>
+                            HTML tag
+                        </th>
+                        <th>
+                            Usage
+                        </th>
+                        <th>
+                            Default styling
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            &lthtml&gt&lt/html&gt
+                        </td>
+                        <td>
+                            Every html tag on a Webpage is nested within this basic tag.
+                        </td>
+                        <td>
+                            /
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="3" id="head">HEAD</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lthead&gt&lt/head&gt
+                        </td>
+                        <td>
+                            Head is used to store metadate, data about data which isn't displayed on Webpage.
+                            <br>
+                            Head can contain: &lttitle&gt, &ltstyle&gt, &ltmeta&gt, &ltlink&gt, &ltscript&gt, &ltbase&gt.
+                        </td>
+                        <td>
+                            <head>/</head>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lttitle&gt&lt/title&gt
+                        </td>
+                        <td>
+                            shown in the browser's title bar or in the page's tab, important for SEO
+                        </td>
+                        <td>
+                            /
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltstyle&gt&lt/style&gt
+                        </td>
+                        <td>
+                            Used for internal CSS Ruleset styling
+                        </td>
+                        <td>
+                            /
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltmeta&gt
+                        </td>
+                        <td>
+                            <ul>
+                                <li>ATTRIBUTES (&ltmeta attr1="" atr2=""&g)</li>
+                                <li>charset="UTF-8" - defines charset used</li>
+                                <li>name="keywords" content="kw1, kw2.." - keyword for SE</li>
+                                <li>name="description" content="Description of Webpage"</li>
+                                <li>name="author" content="Author Name" - define Author of WepPage</li>
+                                <li>http-equiv="refresh" content="30" - refresh document every 30 seconds</li>
+                                <li>name="viewport" content="width=device-width, initial-scale=1.0"</li>
+                            </ul>
+                        </td>
+                        <td>
+                            /
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltlink&gt
+                        </td>
+                        <td>
+                            used to link external docuents (&ltlink href='#.css' rel='stylesheet'&gt)
+                        </td>
+                        <td>
+                            <link>example</link>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltscript&gt&lt/script&gt
+                        </td>
+                        <td>
+                            used to define client-side JavaScripts
+                        </td>
+                        <td>
+                            /
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltbase&gt
+                        </td>
+                        <td>
+                            specifies the base URL and/or target for all relative URLs in a page
+                            <br>
+                            &ltbase href="https://www.w3schools.com/" target="_blank"&gt
+                        </td>
+                        <td>
+                            /
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            SEMANTIC HTML
+                        </td>
+                        <td>
+                            &ltarticle&gt
+                            <br>
+                            &ltaside&gt
+                            <br>
+                            &ltdetails&gt
+                            <br>
+                            &ltfigcaption&gt
+                            <br>
+                            &ltfigure&gt
+                            <br>
+                            &ltfooter&gt
+                            <br>
+                            &ltheader&gt
+                            <br>
+                            &ltmain&gt
+                            <br>
+                            &ltmark&gt
+                            <br>
+                            &ltnav&gt
+                            <br>
+                            &ltsection&gt
+                            <br>
+                            &ltsummary&gt
+                            <br>
+                            &lttime&gt
+                        </td>
+                        <td>
+                            <p>Semantic html has meaning, unlinke for example &ltdiv&gt and &ltseciton&gt elements</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="3" id="body">BODY</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltbody&gt&lt/body&gt
+                        </td>
+                        <td>
+                            defines Webpage body: content that will be displayed
+                            <br>
+                            usually divided into &ltheader&gt, &ltmain&gt and &ltfooter&gt
+                        </td>
+                        <td>
+                            <body>example</body>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="3" id="header">HEADER</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltheader&gt&lt/header&gt
+                        </td>
+                        <td>
+                            header of page, usaully h1, nav and logo
+                        </td>
+                        <td>
+                            <header>example</header>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltnav&gt&lt/nav&gt
+                        </td>
+                        <td>
+                            defines a set of navigation links
+                        </td>
+                        <td>
+                            <nav>
+                              <a href="/html/">HTML</a> |
+                              <a href="/css/">CSS</a> |
+                              <a href="/js/">JavaScript</a> |
+                              <a href="/jquery/">jQuery</a>
+                            </nav>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lta&gt&lt/a&gt
+                        </td>
+                        <td>
+                            anchor: defines hyperlink to internal/external file, via absolute/relative path
+                            <br>
+                            or link to different section on the same page via #id attribute
+                            <br>
+                            attr href="link", mailto:example@gmail.com to open mail app
+                            <br>
+                            attr target="_self/blank/parent/top" self is default
+                            <br>
+                            attr title="extra info about the link, shown on hover"
+                        </td>
+                        <td>
+                            <a href="./index.html" target="_blank" title="Go to Homepage">example</a>
+                        </td>
+
+                    <tr>
+                        <td>
+                            &ltimg&gt
+                        </td>
+                        <td>
+                            embed an image in a web page
+                            <br>
+                            attr src="image source link", internal/external, relative/absolute, *browser uses this path to load img
+                            <br>
+                            attr alt="alternative text" for screen readers and when img doesn't load
+                        </td>
+                        <td>
+                            <img src="https://www.python.org/static/community_logos/python-powered-w-200x80.png" alt="Python logo">
+                            <a href="https://www.python.org/" target="_blank" title="Python official Website"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATYAAACjCAMAAAA3vsLfAAAAM1BMVEX///8AAAAFBQXp6enQ0NDPz8/T09OMjIzMzMyQkJCHh4fHx8fl5eXy8vIXFxcSEhIiIiKGYjvNAAABHUlEQVR4nO3cUU4CMRSGUS4oIqC4/9XCAyHCgxl+G5qm56ygfJmmGeB2tQIAAAAAAAAAAAAAAAAAAADa2x96r2BEH1W73msYz6Wabk/7rNLtaddqVe+9VzKSW7Wqt95rGcevarotdlfNPl3qWLolNrpFdMs8dnMuLKNb5rHbtveCBqFbxj7N6JbRLaNbxrmQ0S2jW0a3zNfP1N2q1pHv09TPWzUzVbd22abq1jDbTN1aZpuoW9Ns1fvTvEzTap421f6kWkS1iLeEl5r8nTTkG5CEagnVEqol/HKVUC2hWkK1hNMgoVrCDk2olvBP8YRqCVMwETNXGRN+GfOkGdPLGbPyGTczZNwDknHrDAAAAAAAAAAAAAAAAAAAAPzTGSZoCKX6zcIOAAAAAElFTkSuQmCC" alt="link to Python"
+                            style="height: 50px; width: auto;"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="3" id="main">MAIN</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltmain&gt&lt/main&gt
+                        </td>
+                        <td>
+                            main contet of page
+                        </td>
+                        <td>
+                            <main>example</main>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lth1&gt&lt/h1&gt
+                        </td>
+                        <td>
+                            h1-h6 tags are used to mark headings
+                        </td>
+                        <td>
+                            <h1>Heading</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltp&gt&lt/p&gt
+                        </td>
+                        <td>
+                            Defines a paragraph
+                        </td>
+                        <td>
+                            <p>paragraph 1</p>
+                            <p>paragraph 2</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lthr&gt
+                        </td>
+                        <td>
+                            defines a thematic break in an HTML page (e.g. a shift of topic).
+                        </td>
+                        <td>
+                            topic 1<hr>topic 2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltbr&gt
+                        </td>
+                        <td>
+                            Inserts a single line break
+                        </td>
+                        <td>
+                            before &ltbr&gt<br>after
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltpre&gt&lt/pre&gt
+                        </td>
+                        <td>
+                            Defines pre-formatted text
+                        </td>
+                        <td>
+                            <pre>
+def func():
+    for i in range(10):
+        if i % 2 == 0:
+            print(i)
+                            </pre>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lttable&gt&lt/table&gt
+                        </td>
+                        <td>
+                            &ltthead&gt, &lttbody&gt, &lttfoot&gt, &ltcaption&gt, &lttr&gt, &ltth&gt, &lttd&gt, &ltcolgroup&gt, &ltcol&gt
+                            <br>
+                            &ltcolgroup&gt span="x" - specifies a group of x columns for formatting
+                            <br>
+                            &ltcol&gt Specifies column properties for each column within a &ltcolgroup&gt element
+                        </td>
+                        <td>
+                            <!-- table example start -->
+                            <table>
+                              <colgroup>
+                                <col style="background-color: gray;">
+                                <col span="2" style="background-color: lightblue;">
+                              </colgroup>
+                              <tr>
+                                <th>Person 1</th>
+                                <th>Person 2</th>
+                                <th>Person 3</th>
+                              </tr>
+                              <tr>
+                                <td>Emil</td>
+                                <td>Tobias</td>
+                                <td>Linus</td>
+                              </tr>
+                              <tr>
+                                <td>16</td>
+                                <td>14</td>
+                                <td>10</td>
+                              </tr>
+                            </table>
+                            <!-- table example end -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltul&gt, &ltol&gt, &ltli&gt AND &ltdl&gt, &ltdt&gt, &ltdd&gt
+                        </td>
+                        <td>
+                            &ltul&gt, &ltol&gt, &ltli&gt unordered list, ordered list, list items
+                            <br>
+                            <br>
+                            &ltol type="?"&gt can be 1, I, i for numbering in indian, roman upper/lower,
+                            <br>
+                            1 or nums, 'A' 'a' for letters
+                            <br>
+                            &ltol start="?"&gt specify starting counting number
+                            <br>
+                            <br>
+                            &ltdl&gt, &ltdt&gt, &ltdd&gt description list, description term, description data
+                        </td>
+                        <td>
+                            <b>Ordered list:</b>
+                            <ol>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ol>
+                            <b>Description list:</b>
+                            <dl>
+                                <dt>Python, JavaScript</dt>
+                                <dd>Imperative Programming languages</dd>
+                                <dt>HTML, CSS</dt>
+                                <dd>Descriptive, not really programming languages</dd>
+                            </dl>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="3" id="format">FORMATING HTML</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltb&gt&lt/b&gt
+                        </td>
+                        <td>
+                            Defines bold text
+                        </td>
+                        <td>
+                            <b>example</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltstrong&gt&lt/strong&gt
+                        </td>
+                        <td>
+                            Defines important text
+                        </td>
+                        <td>
+                            <strong>example</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &lti&gt&lt/i&gt
+                        </td>
+                        <td>
+                            Defines a part of text in an alternate voice or mood
+                        </td>
+                        <td>
+                            <i>example</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltem&gt&lt/em&gt
+                        </td>
+                        <td>
+                            Defines emphasized text
+                        </td>
+                        <td>
+                            <em>example</em>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltmark&gt&lt/mark&gt
+                        </td>
+                        <td>
+                            Defines marked/highlighted text
+                        </td>
+                        <td>
+                            <mark>example</mark>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltsmall&gt&lt/small&gt
+                        </td>
+                        <td>
+                            Defines smaller text
+                        </td>
+                        <td>
+                            <small>small</small> normal
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltdel&gt&lt/del&gt
+                        </td>
+                        <td>
+                            Defines deleted text
+                        </td>
+                        <td>
+                            <del>example</del>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltins&gt&lt/ins&gt
+                        </td>
+                        <td>
+                            Defines inserted text
+                        </td>
+                        <td>
+                            <ins>example</ins>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltsub&gt&lt/sub&gt
+                        </td>
+                        <td>
+                            Defines subscripted text
+                        </td>
+                        <td>
+                            <sub>subscripted</sub> normal
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltsup&gt&lt/sup&gt
+                        </td>
+                        <td>
+                            Defines superscripted text
+                        </td>
+                        <td>
+                            <sup>superscripted</sup> normal
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="3" id="quote">QUOTATION AND CITATION</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltblockquote&gt&lt/blockquote&gt
+                        </td>
+                        <td>
+                            attr cite="citation link"
+                        </td>
+                        <td>
+                            A quote:<blockquote cite="https://en.wikipedia.org/wiki/William_Shakespeare">To be or not to be. Question is now!<br>
+                            Oh love, what is life, baby dont hurt me :(</blockquote>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltq&gt&lt/q&gt
+                        </td>
+                        <td>
+                            defines a short quotation
+                        </td>
+                        <td>
+                            As Beckovic said:<q>Ceracemo se jos!</q>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltabbr&gt&lt/abbr&gt
+                        </td>
+                        <td>
+                            defines an abbreviation or an acronym
+                            <br>
+                            attr title="show full name on hover"
+                        </td>
+                        <td>
+                            <abbr title="HyperText Markup Langugage">HTML</abbr> &lt-hover over this
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltaddress&gt&lt/address&gt
+                        </td>
+                        <td>
+                            defines the contact information for the author/owner of a document or an article
+                        </td>
+                        <td>
+                            <address>
+                                Written by John Doe.<br>
+                                Visit us at:<br>
+                                Example.com<br>
+                                Box 564, Disneyland<br>
+                                USA
+                            </address>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltcite&gt&lt/cite&gt
+                        </td>
+                        <td>
+                            defines the title of a creative work (e.g. book, poem, song)
+                        </td>
+                        <td>
+                            Balasevic - <cite>Jednom su sadili lipu</cite>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltbdo&gt&lt/bdo&gt
+                        </td>
+                        <td>
+                            BDO stands for Bi-Directional Override.
+                            <br>
+                            used to override the current text direction
+                        </td>
+                        <td>
+                            <bdo dir="rtl">example in mirror</bdo>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="3" id="code">COMPUTER CODE ELEMENTS</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltcode&gt&lt/code&gt
+                        </td>
+                        <td>
+                            Defines programming code
+                        </td>
+                        <td>
+                            <code><pre>
+def main():
+    if len(sys.argv) != 2:
+        sys.exit('Bad args')
+    if sys.argv[1] == 'g':
+        while True:
+            pyperclip.copy(generate())
+    if sys.argv[1] == 'l':
+        pyperclip.copy(generate_list())
+    if sys.argv[1] == 'c':
+        pyperclip.copy(clean_up())
+                            </pre></code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltvar&gt&lt/var&gt
+                        </td>
+                        <td>
+                            Defines a variable
+                        </td>
+                        <td>
+                            <var>x</var> = 5<br>
+                            <var>y</var> = 2<br>
+                            <var>x + y</var> = 7
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltsamp&gt&lt/samp&gt
+                        </td>
+                        <td>
+                            Defines computer output
+                        </td>
+                        <td>
+                            <code>response = requests.get('https://www.google.com')</code>
+                            <p>should output:</p>
+                            <p><samp>&ltclass 'requests.models.Response'&gt</samp></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltkbd&gt&lt/kbd&gt
+                        </td>
+                        <td>
+                            Defines keyboard input
+                        </td>
+                        <td>
+                            Enter <kbd>Ctrl + S</kbd> to save.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="3" id="form">FORM</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltform&gt&lt/form&gt
+                        </td>
+                        <td>
+                            used to create an HTML form for user input<br>
+                            <strong>action</strong> attribute defines the action to be performed when the form is submitted<br>
+                            Usually, the form data is sent to a file on the server when the user clicks on the submit button.<br><br>
+                            <strong>target</strong> attribute specifies where to display the response that is received after submitting the form<br>
+                            can have one of the following values: _blank, _self, _parent, _ top, <var>framename</var> of iframe element<br><br>
+                            <strong>method</strong> attribute specifies the HTTP method to be used when submitting the form data<br>
+                            The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").
+                        </td>
+                        <td>
+                            <form>
+                                <form action="#">
+                                    <label for="fname">First name:</label><br>
+                                    <input type="text" id="fname" value="John"><br><br>
+                                    <input type="submit" value="Submit">
+                                </form>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltinput&gt
+                        </td>
+                        <td>
+                            most used form element, can be displayed in many ways, depending on the type attribute<br>
+                            <br>
+                            &ltinput type="text"&gt	Displays a single-line text input field
+                            <br>
+                            &ltinput type="radio"&gt	Displays a radio button (for selecting one of many choices)
+                            <br>
+                            &ltinput type="checkbox"&gt	Displays a checkbox (for selecting zero or more of many choices)
+                            <br>
+                            &ltinput type="submit"&gt	Displays a submit button (for submitting the form)
+                            <br>
+                            &ltinput type="button"&gt	Displays a clickable button
+                        </td>
+                        <td>
+                            Text <input type="text"><br>
+                            Radio <input type="radio" name="1"><input type="radio" name="1"><br>
+                            CheckBox <input type="checkbox" name="2"><input type="checkbox" name="2"><br>
+                            Submit <input type="submit">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltlabel&gt&lt/label&gt
+                        </td>
+                        <td>
+                            defines a label for many form elements<br>
+                            element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.<br>
+                            element also help users who have difficulty clicking on very small regions<br>
+                            &ltlabel&gt tag should be equal to the id attribute of the &ltinput&gt element
+                        </td>
+                        <td>
+                            <label for="check">Click me</label>
+                            <input id="check" type="checkbox" name="3" style="position: relative; left: 100px;">
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="3" id="footer">FOOTER</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            &ltfooter&gt&lt/footer&gt
+                        </td>
+                        <td>
+                            A &ltfooter&gt element typically contains:
+                            <br>
+
+                            <br>
+                            authorship information
+                            <br>
+                            copyright information
+                            <br>
+                            contact information
+                            <br>
+                            sitemap
+                            <br>
+                            back to top links
+                            <br>
+                            related documents
+                        </td>
+                        <td>
+                            <footer><p>Aleksandar Bajceta 2022 &copy All rights reserved</p></footer>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </main>
+        <footer>
+            <p>Aleksandar Bajceta 2022 &copy All rights reserved</p>
+        </footer>
+    </body>
+</html>

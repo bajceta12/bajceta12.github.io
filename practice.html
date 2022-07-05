@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Aleksandar Bajceta">
+    <meta name="viewport" content="width=device-with, initial-scale=1.0">
+    <meta name="keywords" content="HTML, Programming, Practice">
+    <meta name="description" content="Private Webpage for practicing HTML">
+    <link rel="stylesheet" href="styles.css">
+    <title>Practice Page</title>
+
+</head>
+<body>
+<div class="body">
+    <header>
+        <h1>COPY OF HOMEPAGE FOR PRACTICE</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Homepage</a></li>
+                <li><a href="./html.html"><abbr title="HyperText Markup Language">HTML</abbr></a></li>
+                <li><a href="#"><abbr title="Cascading StyleSheets">CSS</abbr></a></li>
+                <li><a href="#">Python</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Hello, World!<br>
+        I am Aleksandar Bajceta from Serbia. Welcome to my personal website!<br>
+        I will post my programming journey here.</p>
+
+        <section id="py">
+            <h2>Python</h2>
+            <p>Python is the first programming language I started learning.</p>
+        </section>
+        <section>
+            <h2>JavaScript</h2>
+            <p style="background-color:lightblue;">JavaScript bellow this</p>
+            <p id="demo">Demo paragraph</p>
+            <form onsubmit="greet(); return false;">
+                <label for="name">Enter your name: </label>
+                <input type="text" name="name" id="name" autofocus><br>
+                <label for="name1">Short: </label>
+                <input type="text" name="name1" id="name1"><br>
+                <label for="name2">Lorem ispusm long long: </label>
+                <input type="text" name="name2" id="name2"><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <button type="button">Test Button</button>
+    </main>
+    <footer>
+        <p>Aleksandar Bajceta 2022 &copy All rights reserved</p>
+    </footer>
+    <script>
+        function greet() {
+            let x = 1, y = 2, z = x + y;
+            document.getElementById('demo').innerHTML = z
+        }
+    </script>
+</div>
+</body>
+</html>
